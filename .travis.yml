@@ -2,7 +2,6 @@ language: python
 python:
 - '2.7'
 install: pip install pylint
-script: pylint addnumber.py --coverage-text
 after_success:
   - bash travis-automerge.sh $USERNAME $PASSWORD
 env:
@@ -13,5 +12,6 @@ notifications:
   email:
     recipients:
       - Avery.Hu@acer.com
-    on_success: never
+    on_success: always
     on_failure: always
+script: pylint addnumber.py

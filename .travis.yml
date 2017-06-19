@@ -11,7 +11,7 @@ env:
 notifications:
   email:
     recipients:
-      - Avery.Hu@acer.com
+      - dc06dcj6@hotmail.com
     on_success: always
     on_failure: always
 script: pylint addnumber.py

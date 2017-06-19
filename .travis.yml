@@ -3,7 +3,7 @@ python:
 - '2.7'
 install: pip install pylint
 script: pylint addnumber.py
-after_success: ./travis-automerge.sh $USERNAME $PASSWORD
+after_success: bash travis-automerge.sh $USERNAME $PASSWORD
 env:
   global:
   - secure: kNy0yrK98Tmz30HR1gyPKq82WMJ+9l/S/v1tJexVSW3VlNtDj7p/p5zuA5jfG1wPMfW0847ZGopZw36PTg+KFStH4UnjOnfqvLl0up7YixfcPufzQb1XeBosOdeAXTBVMFfjlsyqYmKYu1lp61L0sA2KcGWkItV7yTutlTSxOX6MHMZRmwVixQIaon7AndafUG/L4afcXsSy/lAAe5d2iH3Yyl0oOPe6gRIMkMRcobStlkyMSZ4s4OPjo590YGFx94iUXoQbnyOQFsEY2VuO7pqKmZ9/zNW1ol6Ev/46IBpzAHYCzd2A3vq2IIMPCyWhD32QfIiYg2XqF/HZt+hpiAUylpmuKEg4rV+w6GLb/Nx+V3gRtB6Jh2+8hJjPuhbs19cNeDOcBnoqUFVThgc9gzT5C2VcgMAE7XhmVEbq8iJGolWJyo2HIRu/bS+Z2/ClatQ4op8EIZ1aGRT9EoTU5KDAFroUpCrp12TgOt4bnd5AfyqI6J02iFW0e3RNe50/oaX4/RplPSfa8uhX0wXhEjNH46RjDjQjMBQrpxzs6guLzU7lxfcsahJ8zReYKAGD+3q1alrlpu7KPpdxwfO1kaBGknaYnMFRpQnTZ3S3UHV+SKENoGiZz62bYhCH8ggBAPDERaOYOXZbzW3/6L+R4JS15folR8PBUQtQs1IH59o=

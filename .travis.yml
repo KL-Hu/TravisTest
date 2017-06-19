@@ -12,6 +12,6 @@ env:
 notifications:
   email:
     recipients:
-      - avery.hu@acer.com
+      - Avery.Hu@acer.com
     on_success: never
     on_failure: always

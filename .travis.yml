@@ -10,6 +10,5 @@ install: "pip install pylint"
 script: "pylint addnumber.py"
 
 after_success:
-  - "curl -o travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge"
   - "chmod a+x travis-automerge"
   - "BRANCHES_TO_MERGE_REGEX='^d' BRANCH_TO_MERGE_INTO=develope GITHUB_REPO=KL-Hu/TravisTest travis-automerge"

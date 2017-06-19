@@ -4,8 +4,6 @@ python:
 install: pip install pylint
 script: pylint addnumber.py
 after_success:
-  - git config --global --unset http.proxy
-  - git config --global --unset https.proxy  
   - bash travis-automerge.sh $USERNAME $PASSWORD
 env:
   global:

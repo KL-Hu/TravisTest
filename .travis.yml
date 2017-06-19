@@ -11,4 +11,4 @@ script: "pylint addnumber.py"
 
 after_success:
   - "chmod a+x travis-automerge"
-  - "BRANCHES_TO_MERGE_REGEX='^d' BRANCH_TO_MERGE_INTO=develope GITHUB_REPO=KL-Hu/TravisTest travis-automerge"
+  - "BRANCHES_TO_MERGE_REGEX='^d' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=KL-Hu/TravisTest travis-automerge"

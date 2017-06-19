@@ -1,14 +1,10 @@
 language: python
-
 python:
-  - "2.7"
-  
-# command to install dependencies
-install: "pip install pylint"
-
-# command to run tests
-script: "pylint addnumber.py"
-
-after_success:
-  - "chmod a+x travis-automerge"
-  - "BRANCHES_TO_MERGE_REGEX='[a-z]*' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=KL-Hu/TravisTest travis-automerge"
+- '2.7'
+install: pip install pylint
+script: pylint addnumber.py
+after_success: ./travis-automerge.sh $USERNAME $PASSWORD
+env:
+  global:
+  - secure: kNy0yrK98Tmz30HR1gyPKq82WMJ+9l/S/v1tJexVSW3VlNtDj7p/p5zuA5jfG1wPMfW0847ZGopZw36PTg+KFStH4UnjOnfqvLl0up7YixfcPufzQb1XeBosOdeAXTBVMFfjlsyqYmKYu1lp61L0sA2KcGWkItV7yTutlTSxOX6MHMZRmwVixQIaon7AndafUG/L4afcXsSy/lAAe5d2iH3Yyl0oOPe6gRIMkMRcobStlkyMSZ4s4OPjo590YGFx94iUXoQbnyOQFsEY2VuO7pqKmZ9/zNW1ol6Ev/46IBpzAHYCzd2A3vq2IIMPCyWhD32QfIiYg2XqF/HZt+hpiAUylpmuKEg4rV+w6GLb/Nx+V3gRtB6Jh2+8hJjPuhbs19cNeDOcBnoqUFVThgc9gzT5C2VcgMAE7XhmVEbq8iJGolWJyo2HIRu/bS+Z2/ClatQ4op8EIZ1aGRT9EoTU5KDAFroUpCrp12TgOt4bnd5AfyqI6J02iFW0e3RNe50/oaX4/RplPSfa8uhX0wXhEjNH46RjDjQjMBQrpxzs6guLzU7lxfcsahJ8zReYKAGD+3q1alrlpu7KPpdxwfO1kaBGknaYnMFRpQnTZ3S3UHV+SKENoGiZz62bYhCH8ggBAPDERaOYOXZbzW3/6L+R4JS15folR8PBUQtQs1IH59o=
+  - secure: Ymqsy3oIm5xzGMeLR9f5Ai8592M/3p/QhvMMfl/sDdOjnrKPivY1yJO2fskWErDkeX3eSuPsxNvHDvvXnFj4gushxNgtjCMJi3kor6oO/JrqL2RZKryJaC6v6/CBpsnTVB0LO1BSNZc1LBzIwWNl09AVE5dQO4gcraWoY9xgHeemE9QUWIv5gGg3/uu/bRnwirnD9WjKAkBoyDH7vTFbiWqIfx9qTjWpmaj0NIV7qGcvmUmSTVYXuvcVylqNLYdoFBbfGYomu6Ce0foW17MZSK0+T7sbXFzVqDRqhSYQuU3oH9f01hs5ozOmzPxz9UYD829+x7z1atYHV+cXk3i61MaCXiYzZ77Oj7oZpTMvulw3FE1n/HaokAWTDiN7xiIsOdMU9lBeF7k+N/a7p6wCriEHPrOKxo9jUBYO8RgUZdxTm4jslUNfDDJDOxviRRDkLJOINTaHjU4ZC2dUzNfFbg6e1j5AgZDezEUbNybguibLzXuAffoRFgVoCNI3UWt5N7WEkpVlUOqOYulbeGiBXGQMyPefvkkvJcJdT8NCtu18wvXh+mRdgo/3ER4gm6ymI6TIWwynnpXNwfnwd+kzDFys5T1vyuPYQHfRka17+rVim/jFe+nFWFaiATTi5a4/uLXzsKqzgQt8Sv9bdT3uM024ujuTarfIsAMaJJ6GrSM=

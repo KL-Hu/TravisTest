@@ -19,3 +19,4 @@ notifications:
     on_failure: always
 script: 
   - nosetests --with-coverage && pylint addnumber.py
+  - codecov

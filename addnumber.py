@@ -2,3 +2,5 @@
 from __future__ import print_function
 
 print('The sum of {0} and {1} is {2}'.format(1, 1, 2))
+
+print('The minus of {0} and {1} is {2}'.format(3, 2, 1))

@@ -1,9 +1,11 @@
 language: python
 python:
 - '2.7'
-install: pip install pylint
+install:
+  - pip install --user codecov 
+  - pip install pylint
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - codecov
   - bash travis-automerge.sh $USERNAME $PASSWORD
 env:
   global:

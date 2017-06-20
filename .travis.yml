@@ -15,7 +15,7 @@ notifications:
   email:
     recipients:
       - dc06dcj6@hotmail.com
-    on_success: always
+    on_success: never
     on_failure: always
 script: 
-  - nosetests --with-coverage addnumber.py && pylint addnumber.py
+  - nosetests addnumber.py && pylint addnumber.py

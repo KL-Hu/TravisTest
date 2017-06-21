@@ -15,7 +15,7 @@ notifications:
   email:
     recipients:
       - dc06dcj6@hotmail.com
-    on_success: never
+    on_success: always
     on_failure: always
 script: 
   - nosetests --with-coverage --cover-package=fib && pylint fib test

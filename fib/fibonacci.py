@@ -1,9 +1,9 @@
 #!/bin/python
 # fibonacci.py
 '''This is fib function'''
-def fibonacci(webhook_1):
+def fibonacci(webhook):
     ''' calculate fibonacci series '''
     first, second = 0, 1
-    while first < webhook_1:
+    while first < webhook:
         yield first
         first, second = second, first + second

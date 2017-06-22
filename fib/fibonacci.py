@@ -1,9 +1,9 @@
 #!/bin/python
 # fibonacci.py
 '''This is fib function'''
-def fibonacci(max_value):
+def fibonacci(avery):
     ''' calculate fibonacci series '''
     first, second = 0, 1
-    while first < max_value:
+    while first < avery:
         yield first
         first, second = second, first + second

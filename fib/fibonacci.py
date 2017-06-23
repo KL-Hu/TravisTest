@@ -1,6 +1,6 @@
 #!/bin/python
 # fibonacci.py
-'''This is fib function m'''
+'''This is fib function n'''
 def fibonacci(webhook):
     ''' calculate fibonacci series '''
     first, second = 0, 1

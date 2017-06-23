@@ -1,9 +1,9 @@
 #!/bin/python
 # fibonacci.py
-'''This is fib function'''
-def fibonacci(webhook):
+''' fib function '''
+def fibonacci(avery):
     ''' calculate fibonacci series '''
     first, second = 0, 1
-    while first < webhook:
+    while first < avery:
         yield first
         first, second = second, first + second

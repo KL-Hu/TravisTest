@@ -1,6 +1,6 @@
 #!/bin/python
 # fibonacci.py
-''' fib function test pull request'''
+''' fib function test pull request conflict'''
 def fibonacci(avery):
     ''' calculate fibonacci series '''
     first, second = 0, 1

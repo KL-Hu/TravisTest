@@ -5,7 +5,7 @@ from nose.tools import assert_equal
 from fib.fibonacci import fibonacci
 
 def test_fib():
-    ''' Test function for fib() pull request 0.0'''
+    ''' Test function for fib() pull request 0'''
     myfib = fibonacci(100)
     series = []
     test_case = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
